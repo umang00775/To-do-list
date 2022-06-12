@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body{
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.box{
+    width: 400px;
+}
+
+p{
+    font-size: 15px;
+    padding: 2px;
+}
+
+
+form{
+    display: flex;
+    margin: 2px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+form:last-child{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+input[type="text"]{
+    width: 400px;
+    height: 35px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+
+input[type="checkbox"]{
+    border-radius: 2px;
+    background-color: white;
+    outline: none;
+    border: none;
+}
+
+button{
+    outline: none;
+    border: none;
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+input:checked+p{
+    text-decoration: line-through #85FFBD;
+    color: #555;
+}
